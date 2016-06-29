@@ -1,0 +1,346 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+@font-face {
+    // font-family: Arial;
+    // src: url('../fonts/Arial/fontawesome-webfont.woff');
+}
+
+@color1 :#fff;
+@color2 :#000;
+
+.clear {
+	clear: both; 
+}
+.reponsive{
+	display: none;
+}
+.z-index1{
+	z-index: 1 !important; 
+}
+
+.relative{
+	position: relative;
+}
+.absolute{
+	position: absolute;
+}
+.underline{
+	text-decoration: underline;
+}
+.text-right{
+	text-align: right !important;
+}
+.text-left{
+	text-align: left !important;
+}
+.bold{
+	font-weight: bold;
+}
+.light{
+	font-weight: lighter;
+}
+.mt10{
+	margin-top: 10px;
+}
+.mt15{
+	margin-top: 15px;
+}
+.mt25{
+	margin-top: 25px;
+}
+
+.mt60{
+	margin-top: 60px;
+}
+.mt50{
+	margin-top: 50px;
+}
+.mt100{
+	margin-top: 100px;
+}
+
+.pt10{
+	padding-top: 10px !important;
+}
+.pt60{
+	padding-top: 60px !important;
+}
+.pb60{
+	padding-bottom: 60px !important;
+}
+.f1 {
+  font-family: 'OpenSans', sans-serif !important;
+}
+.f2 {
+  font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+}
+.f3 {
+  font-family: Arial;
+}
+.f12{
+	font-size: 12px !important;
+}
+.f13{
+	font-size: 13px !important;
+}
+.f14{
+	font-size: 14px !important;
+}
+.f16{
+	font-size: 16px !important;
+}
+.f20{
+	font-size: 20px !important;
+}
+.f30{
+	font-size: 30px !important;
+}
+.f40{
+	font-size: 40px !important;
+}
+.f60{
+	font-size: 60px !important;
+}
+.c1{
+	color: @color1;
+}
+.c2{
+	color:@color2;
+}
+
+.bgr1{
+	background-color: @color1;
+}
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+
+.my-caret-1{
+	width: 0px;
+	height: 0px;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid #e8645a;
+	position: absolute;
+    left: 12px;
+    top: -10px;
+}
+.my-caret-2{
+	width: 0px;
+	height: 0px;
+	border-right: 1px solid #fff;
+	border-left: 20px solid transparent;
+	border-top: 20px solid #fff;
+	position: absolute;
+ 	left: 30%;
+ //    top: -10px;
+}
+
+.father{
+	overflow: hidden;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		bottom: 0;left: 0;right: 0;
+		background-color: @color5;
+		top:50%;
+		opacity: 0;
+		transition: all 0.5s;
+		transform: translateX(-200px);
+	}
+	&:after{
+		display: -webkit-flex; /* Safari */
+		display: flex;
+			-webkit-align-items: center; /* Safari */
+			align-items:         center;
+			-webkit-justify-content: center; /* Safari */
+			justify-content:         center;
+		content: '';
+		position: absolute;
+		bottom: 0;left: 0;right: 0; 
+		background-color: none;
+		top:50%;
+		opacity: 0;
+		transition: all 0.5s;
+		transform: translateX(200px);
+	}
+	.inner{
+		opacity: 0;
+		display: -webkit-flex; /* Safari */
+		display: flex;
+			-webkit-align-items: center; /* Safari */
+			align-items:         center;
+			-webkit-justify-content: center; /* Safari */
+			justify-content:         center;
+		text-align: center;
+		position: absolute;
+		z-index: 1;
+		top:50%;
+		right: 0;bottom: 0;left: 0;
+		transition: all 0.5s;
+		transform: translateY(100px);
+		img{
+			width: inherit !important;
+			// margin: 20px;
+		}
+	}
+	.inner-2{
+		opacity: 0;
+		display: -webkit-flex; /* Safari */
+		display: flex;
+			-webkit-align-items: center; /* Safari */
+			align-items:         center;
+			-webkit-justify-content: center; /* Safari */
+			justify-content:         center;
+		text-align: center;
+		position: absolute;
+		z-index: 1;
+		top:50%;
+		right: 0;bottom: 0;left: 0;
+		transition: all 0.5s;
+		transform: translateY(-100px);
+		img{
+			width: inherit !important;
+			// margin: 20px;
+		}
+	}
+	&:hover{
+		&:before{
+			opacity: 1;
+			transition: all 0.5s;
+			transform:translateX(0);
+		}
+		&:after{
+			opacity: 1;
+			transition: all 0.5s;
+			transform:translateX(0);
+		}
+		.inner{
+			opacity: 1;
+			transition: all 0.5s;
+			transform: translateX(-30px);
+		}
+		.inner-2{
+			opacity: 1;
+			transition: all 0.5s;
+			transform: translateX(30px);
+		}
+	}
+}
+#owl-demo .item{
+	width: 90%;
+	overflow: hidden;
+  img{
+  	width: 100%;
+  }
+}
+
+
+.reponsive-nav{
+	display: none;
+}
+.reponsive-nav-list{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0;
+	width: 200px;
+	background-color: #fff;
+	color:#000;
+	ul{
+		li{
+
+		}
+	}
+}
+
+
+
+.flexslider{
+	border: none !important;
+}
+
+.btn-2{
+	margin-bottom: 20px;
+	overflow: hidden;
+	height: 45px;
+    width: 240px;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #000;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    transition: all 1s;
+    &:after{
+    	content: '';
+    	top:0;bottom: 0;right: 0;left: 0;
+    	background-color: #000;
+    	opacity: 0;
+		position: absolute;
+		transition: all 0.5s;
+		transform: translateY(-100px);
+    }
+    &:hover{
+    	color: #fff !important;
+   		transition: all 1s;
+		&:after{
+			opacity: 1;
+			transition: all 0.5s;
+			transform: translateY(0px);
+			z-index: -1;
+		}
+    }
+}
+
+
+
+/* Medium devices (desktops, 992px and down) *////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* Medium devices (desktops, 992px and down) *////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media screen and (max-width: 1024px) {
+	.row{
+		text-align: center;
+	}
+	.reponsive{display: block;}
+    .reponsive-nav{
+		display: block;
+		font-size: 30px;
+		position: static;
+		right: 10px;
+		z-index: 1;
+	 }
+	.col-md-1, .col-md-10, .col-md-11, .col-md-12, 
+	.col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, 
+	.col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, 
+	.col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, 
+	.col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, 
+	.col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, 
+	.col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+		text-align: center ;
+	}
+	
+	
+	
+}
+/* Medium devices (desktops, 992px and down) *////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* Medium devices (desktops, 992px and down) *////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+@media screen and (max-width: 320px) {
+	.col-xs-12 , .col-sm-12{
+		margin-top: 20px;
+	}
+}
