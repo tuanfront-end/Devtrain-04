@@ -851,11 +851,15 @@ hr {
   }
   .search select {
     margin-top: 10px;
+    background-color: rgba(184, 182, 182, 0.13);
+    border: 1px solid rgba(155, 145, 145, 0.29);
   }
   .search input {
     height: 50px;
     width: 220px;
     border: 1px solid #fff;
+    background-color: rgba(184, 182, 182, 0.13);
+    border: 1px solid rgba(155, 145, 145, 0.29);
   }
   .recommended .recommended-content {
     display: inherit !important;
@@ -873,6 +877,14 @@ hr {
     width: 100% !important;
     max-width: 100% !important;
     float: inherit !important;
+  }
+  .content .my-cart-long .content-cart .right {
+    width: 75%;
+  }
+  .content .my-cart-long .img-cart .star {
+    left: 20%;
+    transform: inherit;
+    top: 66%;
   }
   .what-can {
     margin: 0;
