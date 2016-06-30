@@ -3,6 +3,15 @@
   margin: 0;
 }
 @font-face {
+  font-family: "Gotham book" Times, serif;
+  src: url("font/copyfonts.com_gotham_book.ttf");
+}
+@font-face {
+  font-family: "Gotham md" Times, serif;
+  src: url("font/copyfonts.com_gotham_medium.ttf");
+}
+body {
+  font-family: "Gotham md" !important;
 }
 body span {
   color: #566375;
@@ -653,6 +662,9 @@ hr {
   margin-top: 20px;
   display: flex;
   justify-content: center;
+}
+.what-can .reality img {
+  height: 60px;
 }
 .what-can .reality img,
 .what-can .reality span {

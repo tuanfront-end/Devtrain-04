@@ -2,11 +2,14 @@
 	padding: 0;
 	margin: 0;
 }
-@font-face {
-    // font-family: Arial;
-    // src: url('../fonts/Arial/fontawesome-webfont.woff');
+@font-face{
+	font-family:"Gotham book"  Times, serif;
+	src:url("font/copyfonts.com_gotham_book.ttf");
 }
-
+@font-face{
+	font-family:"Gotham md"  Times, serif;
+	src:url("font/copyfonts.com_gotham_medium.ttf");
+}
 @color1 :#fff;
 @color2 :#000;
 @color3 :#96a6a7;
@@ -17,7 +20,7 @@
 @do : #e94e38;
 @color: #566375;
 body{
-	
+	font-family: "Gotham md" !important;
 	span{
 		color: @color;
 	}
@@ -698,6 +701,9 @@ body{
 			margin-top: 20px;
 			display: flex;
 			justify-content: center;
+			img{
+				height: 60px;
+			}
 			img,span{
 				margin-left: 20px;
 			}
