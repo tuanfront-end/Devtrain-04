@@ -3,15 +3,18 @@
   margin: 0;
 }
 @font-face {
-  font-family: "Gotham book" Times, serif;
-  src: url("font/copyfonts.com_gotham_book.ttf");
+  font-family: "Gotham book";
+  src: url("../fonts/copyfonts.com_gotham_book.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Gotham md" Times, serif;
-  src: url("font/copyfonts.com_gotham_medium.ttf");
+  font-family: "Gotham md";
+  src: url("../fonts/copyfonts.com_gotham_medium.ttf") format("truetype");
+}
+.container {
+  width: 980px !important;
 }
 body {
-  font-family: "Gotham md" !important;
+  font-family: "Gotham book" !important;
 }
 body span {
   color: #566375;
@@ -339,6 +342,8 @@ hr {
   width: 140px;
   height: 35px;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   color: #fff !important;
   background: none !important;
   border: 1px solid #fff;
@@ -418,21 +423,28 @@ hr {
   color: #fff;
 }
 .search select {
+  margin: 10px;
   padding: 10px;
   height: 50px;
   width: 220px;
-  border-radius: 20px;
-  background: none;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  background-color: rgba(184, 182, 182, 0.13);
+  border: 1px solid rgba(155, 145, 145, 0.29);
 }
 .search select:focus option {
   color: #000;
 }
 .search input {
-  padding: 10px;
+  padding: 14px;
   height: 50px;
   width: 475px;
-  border-radius: 20px;
-  background: none;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  background-color: rgba(184, 182, 182, 0.13);
+  border: 1px solid rgba(155, 145, 145, 0.29);
 }
 .search button {
   color: #fff !important;
@@ -441,6 +453,8 @@ hr {
   width: 140px;
   border-color: transparent;
   border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
   background: #e94e38;
   text-transform: uppercase;
 }
@@ -470,9 +484,11 @@ hr {
   height: 40px;
   width: 115px;
   border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
   background: none;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 5px;
 }
 .recommended-content .recommended-center select {
   color: #e94e38;
@@ -539,12 +555,17 @@ hr {
   width: 65px;
   height: 25px;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   text-align: center;
   padding-top: 3px;
   color: #fff;
   position: absolute;
   top: 7px;
   right: 7px;
+}
+.content .my-cart .img-cart .price span {
+  color: #fff;
 }
 .content .my-cart .img-cart .line-cart {
   width: 100%;
@@ -571,7 +592,7 @@ hr {
   flex-grow: 2;
   margin-top: 30px;
   float: left;
-  max-width: 495px;
+  max-width: 446px;
   background-color: #fff;
   padding-bottom: 20px;
 }
@@ -587,12 +608,17 @@ hr {
   width: 65px;
   height: 25px;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   text-align: center;
   padding-top: 3px;
   color: #fff;
   position: absolute;
   top: 7px;
   right: 7px;
+}
+.content .my-cart-long .img-cart .price span {
+  color: #fff;
 }
 .content .my-cart-long .img-cart .line-cart {
   width: 100%;
@@ -652,6 +678,8 @@ hr {
 .what-can .what-can-img i {
   border: 1px solid;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   padding: 20px;
 }
 .what-can .what-can-img i:hover {
@@ -678,6 +706,8 @@ hr {
   height: 60px;
   border: 1px solid #fff;
   border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
   background: none;
   color: #fff;
   width: 500px;
@@ -691,6 +721,8 @@ hr {
   height: 50px;
   border: 1px solid #e94e38;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   background-color: #e94e38;
   box-shadow: 0px 2px 0px 0px #e94e38;
 }
@@ -730,6 +762,9 @@ hr {
 /* Medium devices (desktops, 992px and down) */
 /* Medium devices (desktops, 992px and down) */
 @media screen and (max-width: 1024px) {
+  .container {
+    width: inherit !important;
+  }
   .row {
     text-align: center;
   }
@@ -794,7 +829,7 @@ hr {
     font-size: 20px !important;
   }
   .what-can .reality img {
-    height: 80px;
+    height: 60px;
   }
   .my-cart,
   .my-cart-long {
@@ -807,6 +842,9 @@ hr {
 /* Medium devices (desktops, 992px and down) */
 /* Medium devices (desktops, 992px and down) */
 @media screen and (max-width: 320px) {
+  .container {
+    width: inherit !important;
+  }
   .col-xs-12,
   .col-sm-12 {
     margin-top: 20px;
