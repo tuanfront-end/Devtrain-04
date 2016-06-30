@@ -4,8 +4,8 @@
 }
 @font-face {
 }
-body {
-  padding-bottom: 100px;
+body span {
+  color: #566375;
 }
 body a:hover {
   text-decoration: none;
@@ -308,6 +308,7 @@ body ul {
   position: absolute;
   transition: all 0.5s;
   transform: translateY(-100px);
+  border: 2px solid #000;
 }
 .btn-2:hover {
   color: #fff !important;
@@ -318,6 +319,12 @@ body ul {
   transition: all 0.5s;
   transform: translateY(0px);
   z-index: -1;
+}
+.c5 {
+  color: #1baf5d !important;
+}
+hr {
+  border-top: 1px solid rgba(175, 175, 175, 0.34) !important;
 }
 .btn-3 {
   width: 140px;
@@ -367,7 +374,7 @@ body ul {
   padding: 30px 10px 30px 10px;
 }
 .top-nav .navibar ul li:hover {
-  transition: all 2s;
+  transition: all 1s;
   background-color: #e2dee0;
 }
 .top-nav .navibar ul li a {
@@ -381,7 +388,7 @@ body ul {
   float: left;
 }
 .top-nav .login ul li {
-  transition: all 2s;
+  transition: all 1s;
   float: left;
   list-style-type: none;
   margin-left: 20px;
@@ -628,6 +635,25 @@ body ul {
 .what-can {
   padding-top: 60px;
   padding-bottom: 60px;
+  color: #566375;
+}
+.what-can .what-can-img i {
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 20px;
+}
+.what-can .what-can-img i:hover {
+  color: #1baf5d;
+  border-color: #1baf5d;
+}
+.what-can .reality {
+  display: flex;
+  justify-content: center;
+}
+.what-can .reality tr td {
+  width: 300px;
+  text-align: left;
+  padding: 15px 35px 20px 35px;
 }
 /* Medium devices (desktops, 992px and down) */
 /* Medium devices (desktops, 992px and down) */

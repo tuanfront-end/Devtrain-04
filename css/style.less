@@ -15,8 +15,12 @@
 @tim: #88499c;
 @cam: #f19e1f;
 @do : #e94e38;
+@color: #566375;
 body{
-	padding-bottom: 100px;
+	
+	span{
+		color: @color;
+	}
 	a{
 		&:hover{
 			text-decoration: none;
@@ -322,8 +326,9 @@ body{
     	background-color: #000;
     	opacity: 0;
 		position: absolute;
-		transition: all 0.5s;
+		transition: all 0.5s; 
 		transform: translateY(-100px);
+		border: 2px solid #000;
     }
     &:hover{
     	color: #fff !important;
@@ -337,6 +342,12 @@ body{
     }
 }
 // -----------------------------------------------------------------------------------------------------------------------------------
+	.c5{
+		color: @xanh !important;
+	}
+	hr{
+		border-top:1px solid rgba(175,175,175,0.34) !important;
+	}
 	.btn-3{
 		width: 140px;
 		height: 35px;
@@ -381,7 +392,7 @@ body{
 					margin-left: 20px;
 					padding: 30px 10px 30px 10px;
 					&:hover{
-						transition: all 2s;
+						transition: all 1s;
 						
 						background-color: #e2dee0;
 					}
@@ -397,7 +408,7 @@ body{
 			ul{
 				float: left;
 				li{
-					transition: all 2s;
+					transition: all 1s;
 					
 					float: left;
 					list-style-type: none;
@@ -665,6 +676,31 @@ body{
 	.what-can{
 		padding-top: 60px;
 		padding-bottom: 60px;
+		color: @color;
+
+		.what-can-img{
+		 	i{
+		  	    border: 1px solid;
+			    border-radius: 50%;
+			    padding: 20px;
+			 	&:hover{
+			 		color: @xanh;
+			 		border-color: @xanh;
+			 	}
+		    }
+
+		}
+		.reality{
+			display: flex;
+			justify-content: center;
+			tr{
+				td{
+					width: 300px;
+					text-align: left;
+					padding: 15px 35px 20px 35px;
+				}
+			}
+		}
 	}
 // -----------------------------------------------------------------------------------------------------------------------------------
 
