@@ -344,6 +344,7 @@ hr {
   -webkit-align-items: center;
   /* Safari */
   align-items: center;
+  justify-content: center;
 }
 .top-nav .logo-nav {
   display: -webkit-flex;
@@ -355,9 +356,9 @@ hr {
   -webkit-align-items: center;
   /* Safari */
   align-items: center;
-  -webkit-justify-content: space-between;
+  -webkit-justify-content: space-around;
   /* Safari */
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #fff;
 }
 .top-nav .logo {
@@ -450,6 +451,9 @@ hr {
   text-transform: uppercase;
   color: #96a6a7;
 }
+.recommended-content .recommended-left a:hover {
+  color: #e94e38;
+}
 .recommended-content .recommended-center select,
 .recommended-content .recommended-center button {
   color: #96a6a7;
@@ -507,7 +511,6 @@ hr {
 }
 .content .my-cart {
   -webkit-flex-grow: 1;
-  /* Safari */
   flex-grow: 1;
   margin-top: 30px;
   float: left;
@@ -647,13 +650,70 @@ hr {
   border-color: #1baf5d;
 }
 .what-can .reality {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
-.what-can .reality tr td {
-  width: 300px;
-  text-align: left;
-  padding: 15px 35px 20px 35px;
+.what-can .reality img,
+.what-can .reality span {
+  margin-left: 20px;
+}
+.footer {
+  background-image: url('../images/foot-bg.png');
+  padding: 50px 0 50px 0;
+}
+.footer input {
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  background: none;
+  color: #fff;
+  width: 500px;
+  padding: 20px;
+}
+.footer button {
+  margin-left: -130px;
+  padding: 10px;
+  width: 120px;
+  color: #fff;
+  height: 50px;
+  border: 1px solid #e94e38;
+  border-radius: 20px;
+  background-color: #e94e38;
+  box-shadow: 0px 2px 0px 0px #e94e38;
+}
+.footer .footer-foot {
+  margin-top: 20px;
+  display: flex;
+  -webkit-justify-content: space-around;
+  /* Safari */
+  justify-content: space-around;
+}
+.footer .footer-foot a {
+  color: #c0bebc;
+}
+.footer .footer-foot span {
+  color: #fff;
+}
+.footer .footer-foot ul {
+  margin-top: 10px;
+}
+.footer .footer-foot ul li {
+  list-style-type: none;
+}
+.footer .footer-foot ul.follow {
+  display: flex;
+  justify-content: center;
+}
+.footer .footer-foot ul.follow li {
+  margin-right: 10px;
+  font-size: 40px;
+}
+.top .top-right {
+  background-color: red;
+}
+.top .top-left {
+  background-color: blue;
 }
 /* Medium devices (desktops, 992px and down) */
 /* Medium devices (desktops, 992px and down) */
@@ -709,6 +769,28 @@ hr {
   .col-xs-9 {
     text-align: center ;
   }
+  .navibar {
+    display: none;
+  }
+  .login {
+    display: none;
+  }
+  .recommended-left {
+    text-align: center !important;
+  }
+  .what-can-img i {
+    font-size: 20px !important;
+  }
+  .what-can .reality img {
+    height: 80px;
+  }
+  .my-cart,
+  .my-cart-long {
+    margin-right: 10px;
+  }
+  .my-cart-long {
+    max-width: 430px !important;
+  }
 }
 /* Medium devices (desktops, 992px and down) */
 /* Medium devices (desktops, 992px and down) */
@@ -716,5 +798,72 @@ hr {
   .col-xs-12,
   .col-sm-12 {
     margin-top: 20px;
+  }
+  .search select {
+    margin-top: 10px;
+  }
+  .search input {
+    height: 50px;
+    width: 220px;
+    border: 1px solid #fff;
+  }
+  .recommended .recommended-content {
+    display: inherit !important;
+  }
+  .recommended .recommended-right {
+    text-align: center !important;
+  }
+  .recommended .recommended-right span {
+    display: none;
+  }
+  .content .content-content {
+    display: inherit !important;
+  }
+  .content .content-content .my-cart {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: inherit !important;
+  }
+  .what-can {
+    margin: 0;
+  }
+  .what-can .what-can-img i {
+    font-size: 38px !important;
+    border: none;
+    padding: 0;
+    margin: 15px;
+  }
+  .what-can .what-can-img img {
+    width: 10px;
+  }
+  .reality {
+    display: block flex;
+    flex-direction: column;
+    -webkit-align-items: center;
+    /* Safari */
+    align-items: center;
+  }
+  .reality img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .footer {
+    padding: 10px 0 40px 0;
+    background-color: #384045;
+    background-image: none;
+  }
+  .footer div {
+    margin-top: 20px;
+  }
+  .footer input {
+    width: 80%;
+  }
+  .footer button {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+  }
+  .footer .footer-foot {
+    flex-direction: column;
   }
 }

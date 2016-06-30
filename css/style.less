@@ -365,6 +365,7 @@ body{
 			flex-direction:         row;
 			-webkit-align-items: center; /* Safari */
 			align-items:         center;
+			justify-content: center;
 		}
 	
 		.logo-nav{
@@ -374,8 +375,8 @@ body{
 			flex-direction:         row;
 			-webkit-align-items: center; /* Safari */
 			align-items:         center;
-			-webkit-justify-content: space-between; /* Safari */
-			justify-content:         space-between;
+			-webkit-justify-content: space-around; /* Safari */
+			justify-content:         space-around;
 			background-color: #fff;
 		}
 		.logo{
@@ -478,6 +479,9 @@ body{
 				margin-left: 10px;
 				text-transform: uppercase;
 				color: #96a6a7;
+				&:hover{
+					color: #e94e38;
+				}
 			}
 		}
 		.recommended-center{
@@ -543,7 +547,7 @@ body{
 			}
 		}
 		.my-cart{
-			-webkit-flex-grow: 1; /* Safari */
+			-webkit-flex-grow: 1; 
 			flex-grow:         1;
 			margin-top: 30px;
 			float: left;
@@ -691,15 +695,73 @@ body{
 
 		}
 		.reality{
+			margin-top: 20px;
 			display: flex;
 			justify-content: center;
-			tr{
-				td{
-					width: 300px;
-					text-align: left;
-					padding: 15px 35px 20px 35px;
+			img,span{
+				margin-left: 20px;
+			}
+		}
+	}
+	.footer{
+		background-image: url('../images/foot-bg.png');
+		padding: 50px 0 50px 0;
+		input{
+			height: 60px;
+			border:1px solid #fff;
+			border-radius: 40px;
+			background: none;
+			color: #fff;
+			width: 500px;
+			padding: 20px;
+		}
+		button{
+			margin-left: -130px;
+			padding: 10px;
+			width: 120px;
+			color: #fff;
+			height: 50px;
+			border:1px solid #e94e38;
+			border-radius: 20px;
+			background-color: #e94e38; 
+			box-shadow: 0px 2px 0px 0px #e94e38;
+		}
+		.footer-foot{
+			margin-top: 20px;
+			display: flex;
+			-webkit-justify-content: space-around; /* Safari */
+			justify-content:         space-around;
+			a{
+				color: #c0bebc;
+			}
+			span{
+				color: #fff;
+			}
+			ul{
+				margin-top: 10px;
+				li{
+					list-style-type: none;
 				}
 			}
+			ul.follow{	
+				display: flex;	
+				justify-content	: center;
+				li{
+					// float: left;
+					margin-right: 10px;
+					font-size: 40px;
+
+				}
+			}
+		}
+	}
+	.top{
+	
+		.top-right{
+			background-color: red;
+		}
+		.top-left{
+			background-color: blue;
 		}
 	}
 // -----------------------------------------------------------------------------------------------------------------------------------
@@ -729,9 +791,30 @@ body{
 	.col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
 		text-align: center ;
 	}
-	
-	
-	
+	.navibar{
+		display: none;
+	}
+	.login{
+		display: none;
+	}
+	.recommended-left{
+		text-align: center !important;
+	}
+	.what-can-img{
+		i{
+			font-size: 20px !important;
+		}
+	}
+	.what-can .reality img{
+		height: 80px;
+	}
+
+	.my-cart, .my-cart-long{
+		margin-right: 10px;
+	}	
+	.my-cart-long{
+		max-width: 430px !important;
+	}
 }
 /* Medium devices (desktops, 992px and down) *////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /* Medium devices (desktops, 992px and down) *////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -741,5 +824,80 @@ body{
 @media screen and (max-width: 320px) {
 	.col-xs-12 , .col-sm-12{
 		margin-top: 20px;
+	}
+	.search{
+		select{
+			margin-top: 10px;
+		}
+		input{
+
+			height: 50px;
+			width: 220px;
+			border: 1px solid #fff;
+		}
+	}
+	.recommended{
+		.recommended-content{
+			display: inherit !important;
+		}
+		.recommended-right{
+			text-align: center !important;
+			span{
+				display: none;
+			}
+		}
+	}
+	.content{
+		.content-content{
+			display: inherit !important;
+			.my-cart{
+				width: 100% !important;
+				max-width: 100% !important;
+				float: inherit !important;
+			}
+		}
+	}
+	.what-can{
+		margin: 0;
+		.what-can-img{
+			i{
+				font-size: 38px !important;
+				border: none;
+				padding: 0;
+				margin: 15px;
+			}
+			img{
+				width: 10px;
+			}
+		}
+	}
+	.reality{
+		display: block flex;
+		flex-direction:         column;
+			-webkit-align-items: center; /* Safari */
+			align-items:         center;
+			img{
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+	}
+	.footer {
+		padding: 10px 0 40px 0;
+		background-color: #384045;
+		background-image: none;
+		div{
+			margin-top: 20px;
+		}
+		input{
+			width: 80%;
+		}
+		button{
+			margin:0;
+			margin-top: 10px;
+			padding: 0;
+		}
+		.footer-foot{
+				flex-direction : column;
+		}
 	}
 }
