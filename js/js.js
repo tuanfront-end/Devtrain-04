@@ -117,7 +117,47 @@
 
           //Jquey for Star chose !!!
 
-        
+         
+          $('.inner-2 > i').mouseenter(function(){
+             var i = $(this).index() +1;
+             $('.inner-2 > i:lt('+i+')').addClass('cam');
+          });
+           
+          $('.inner-2 > i').click(function(){
+             $('.inner-2 > i').removeClass('cam2');
+             var i = $(this).index() +1;
+             $('.inner-2 > i:lt('+i+')').addClass('cam2');
+          });
+          
+
+         $('.inner-2 > i').mouseout(function(){
+           $('.inner-2 > i').removeClass('cam');
+         });
+       
+          // $('.inner-2').each(function(){
+              
+               //$(this).mouseenter(function(){
+                 
+              //   console.log(this);  
+              //    var i = $(this).index()+1;
+                
+
+              // });
+
+              // $(this).find('> i').mouseout(function(){
+              //   var i = $(this).index()+1;
+              //    $('i:lt('+i+')').removeClass('red');
+              // });
+
+              // $(this).find('> i').click(function(){
+              //    $(this).removeClass('bb');
+              //    var i = $(this).index()+1;
+              //     $('i:lt('+i+')').addClass('bb');
+              // });
+
+
+
+          // });
           //End Jquey for Star chose !!!
 
 
